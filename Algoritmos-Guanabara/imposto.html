@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de imposto</title>
+</head>
+<body>
+    <script>
+        var preco;
+        var imposto;
+        var resultado;
+
+        preco = parseFloat(prompt("Qual o preço do produto?"));
+        imposto = parseFloat(prompt("Qual a porcentagem de imposto?"));
+        resultado = parseFloat(alert(`O valor do imposto sobre os R$${preco} do produto é de R$${(preco * imposto) / 100}`));
+    </script>
+</body>
+</html>

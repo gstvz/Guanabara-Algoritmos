@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equilátero</title>
+</head>
+<body>
+    <script>
+        var l1;
+        var l2;
+        var l3;
+        var resp;
+
+        l1 = parseInt(prompt("Digite o valor do primeiro lado:"));
+        l2 = parseInt(prompt("Digite o valor do segundo lado:"));
+        l3 = parseInt(prompt("Digite o valor do terceiro lado:"));
+        resp = (l1 > l2 + l3) && (l2 > l1 + l3) && (l3 > l1 + l2) ? alert("Não pode ser um triângulo") : (l1 == l2) && (l2 == l3) ? alert("O triângulo é equilátero") : (l1 != l2) && (l2 != l3) && (l1 != l3) ? alert("O triângulo é escaleno") : alert("Erro");        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de empréstimo</title>
+</head>
+<body>
+    <script>
+        var emprestimo;
+        var juros;
+        var parcelas;
+        var resultado;
+
+        emprestimo = parseFloat(prompt("Qual o valor do empréstimo?"));
+        juros = parseFloat(prompt("Qual a porcentagem dos juros?"));
+        parcelas = parseInt(prompt("Em quantas parcelas deseja pagar?"));
+        resultado = parseFloat(alert(`O juros do empréstimo será de R$${(emprestimo * juros) / 100}, totalizando R$${emprestimo + (emprestimo * juros) / 100} e será pago em ${parcelas} parcelas de R$${emprestimo / parcelas}!`));
+    </script>
+</body>
+</html>
