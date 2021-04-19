@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+</head>
+<body>
+    <script>
+        var g1;
+        var g2;
+
+        g1 = parseInt(prompt("Quantos gols o seu time fez?"));
+        g2 = parseInt(prompt("Quantos gols o time adversário fez?"));
+
+        if (g1 > g2){
+            if (g1 - g2 >= 4){
+                alert(
+                `Seu time: ${g1}
+                Time adversário: ${g2}
+                GOLEADA!`);
+            } else {
+            alert(
+            `Seu time: ${g1}
+            Time adversário: ${g2}
+            Seu time ganhou!`);
+            }
+        } else if (g2 > g1){
+            if (g2 - g1 >= 4){
+                alert(
+                `Seu time: ${g1}
+                Time adversário: ${g2}
+                GOLEADA!`);
+            } else {
+                alert(
+                `Seu time: ${g1}
+                Time adversário: ${g2}
+                Seu time perdeu!`);
+            }
+        } else if (g1 == g2) {
+            alert(
+            `Seu time: ${g1}
+            Time adversário: ${g2}
+            Houve um empate!`);   
+        }         
+
+/* Não consegui fazer um check para apresentar GOLEADA.*/
+    </script>
+</body>
+</html>

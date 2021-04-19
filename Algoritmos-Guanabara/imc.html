@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de IMC</title>
+</head>
+<body>
+    <script>
+        var peso;
+        var altura;
+        var imc;
+
+        peso = prompt("Qual o seu peso em kgs?").replace(",", ".");
+        altura = prompt("Qual sua altura em metros?").replace(",", ".");
+        imc = peso / (altura * altura);
+        imc = imc.toFixed(2);
+
+        if (imc < 17){
+            alert(`O seu IMC é ${imc}, e você está muito abaixo do peso!`);
+        } else if (imc >= 17 && imc < 18.5){
+            alert(`O seu IMC é ${imc}, e você está abaixo do peso!`);
+        } else if (imc >= 18.5 && imc < 25){
+            alert(`O seu IMC é ${imc}, e você está no peso ideal!`);
+        } else if (imc >= 25 && imc < 30){
+            alert(`O seu IMC é ${imc}, e você está com sobrepeso!`);
+        } else if (imc >= 30 && imc < 35){
+            alert(`O seu IMC é ${imc}, e você está com obesidade!`);
+        } else if (imc >= 35 && imc < 40){
+            alert(`O seu IMC é ${imc}, e você está com obesidade severa!`);
+        } else if (imc >= 40){
+            alert(`O seu IMC é ${imc}, e você está com obesidade mórbida!`);
+        }   
+    </script>
+</body>
+</html>

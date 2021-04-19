@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade com condicional</title>
+</head>
+<body>
+    <script>
+        var ano;
+        var nasc;
+        var idade;
+
+        ano = prompt("Em que ano estamos?").replace(".", "");
+        nasc = prompt("Em que ano você nasceu?").replace(".", "");
+        idade = ano - nasc;
+        if (idade > 18){
+            alert(`Você tem ${idade} anos, e já é maior de idade!`);
+        } else {
+            alert(`Você tem ${idade} anos e é menor de idade!`);
+        }
+    </script>
+</body>
+</html>

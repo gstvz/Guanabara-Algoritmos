@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apto a dirigir</title>
+</head>
+<body>
+    <script>
+        var ano;
+        var nasc;
+        var idade;
+
+        ano = prompt("Em que ano estamos?");
+        nasc = prompt("Em que ano você nasceu?");
+        idade = ano - nasc;
+
+        if (idade >= 18){
+            alert(`Você tem ${idade} anos e está apto a dirigir!`);
+        } else {
+            alert(`Você tem ${idade} anos e não está apto a dirigir!`);
+        }
+    </script>
+</body>
+</html>

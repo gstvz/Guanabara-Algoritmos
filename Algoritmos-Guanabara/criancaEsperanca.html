@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criança Esperança</title>
+</head>
+<body>
+    <script>
+        var d;
+        var valor;
+
+        d = prompt(`CRIANÇA ESPERANÇA
+            Obrigado por ajudar!
+            1 para doar R$10,
+            2 para doar R$25,
+            3 para doar R$50,
+            4 para doar outros valores,
+            5 para cancelar.
+        `);
+
+        switch(d){
+            case '1':
+                valor = 10; 
+                alert(`Sua doação de R$${valor} foi realizada! Obrigado!`);               
+                break;                
+            case '2':
+                valor = 25;
+                alert(`Sua doação de R$${valor} foi realizada! Obrigado!`);
+                break;
+            case '3':
+                valor = 50;
+                alert(`Sua doação de R$${valor} foi realizada! Obrigado!`);
+                break;
+            case '4':
+                valor = prompt("Insira o valor que deseja doar:");
+                alert(`Sua doação de R$${valor} foi realizada! Obrigado!`);
+                break;
+            case '5':
+                alert("Doação cancelada!");
+                break;            
+        } 
+    </script>
+</body>
+</html>

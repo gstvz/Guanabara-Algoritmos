@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura condicional - Disney</title>
+</head>
+<body>
+    <script>
+        var dinheiro;
+        var resposta;
+
+        dinheiro = (prompt("Quanto de dinheiro você tem?")).replace(".", "");        
+        if (dinheiro >= 10000){
+            alert("Bora pra Disney!");
+        } else if (dinheiro < 10000 && dinheiro >= 5000) {
+            alert("Menos de 10.000, então vou visitar minha família");
+        } else {
+            alert("Menos de 5.000... não dá para viajar :(");
+        }
+    </script>
+</body>
+</html>

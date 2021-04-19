@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário com base no número de dependentes</title>
+</head>
+<body>
+    <script>
+        var nome;
+        var sal;
+        var dep;
+        var nsal;
+
+        nome = prompt("Qual o nome do funcionário?");
+        sal = parseInt(prompt("Qual o salário do funcionário?"));
+        dep = prompt("Qual é a quantidade de dependentes?");
+
+        switch(dep){
+            case '0':
+                nsal = sal + (sal * 5 /100);
+                break;
+            case '1': case '2': case '3':
+                nsal = sal + (sal * 10 / 100);
+                break;
+            case '4': case '5': case '6':
+                nsal = sal + (sal * 15 / 100);
+                break;
+            default:
+                nsal = sal + (sal * 18 / 100);            
+        } alert(`O novo salário de ${nome} será de R$${nsal}.`)
+    </script>
+</body>
+</html>
