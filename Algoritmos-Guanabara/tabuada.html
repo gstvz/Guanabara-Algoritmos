@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script>
+        var contador = 1;
+        var numero;
+        var resultado;
+
+        numero = prompt("Quer ver a tabuada de qual número?");
+
+        do {
+            resultado = numero * contador;
+            alert(`${numero} X ${contador} = ${resultado}`);
+            contador++;
+        } while (contador <= 10)
+    </script>
+</body>
+</html>

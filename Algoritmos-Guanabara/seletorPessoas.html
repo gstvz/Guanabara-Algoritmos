@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de pessoas</title>
+</head>
+<body>
+    <script>
+        var sexo;
+        var resp;
+        var idade;
+        var cabelo;
+        var totH18 = 0;
+        var totM25 = 0 ;
+
+        do {
+            sexo = prompt("Qual o sexo? M ou F?");
+            idade = parseInt(prompt("Qual a idade?"));
+            cabelo = prompt(`Qual a cor do cabelo? 
+            [1] Preto
+            [2] Castanho
+            [3] Loiro
+            [4] Ruivo`);
+            if (sexo == "M" && idade > 18 && cabelo == 2){
+                totH18++;
+            } else if (sexo = "F" && idade >= 25 && idade <= 30 && cabelo == "3"){
+                totM25++;
+            }
+            resp = prompt("Quer continuar? S ou N?");            
+        } while(resp != "N");
+        alert(`Total de homems com mais de 18 e cabelos castanhos: ${totH18}
+        Total de mulheres entre 25 e 30 e cabelos loiros: ${totM25}`);
+    </script>
+</body>
+</html>

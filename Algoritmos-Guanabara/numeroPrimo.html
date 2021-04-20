@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número primo</title>
+</head>
+<body>
+    <script>
+        var contador = 1;
+        var numero;
+        var divisivel = 0;
+        var divisao;
+
+        numero = parseInt(prompt("Digite um número:"));
+
+        do {
+            divisao = numero % contador;
+            if (divisao == 0){
+                divisivel++;
+            }
+            contador++;
+        } while (contador <= numero);
+        if(divisivel > 2){
+            alert(`${numero} não é primo!`);
+        } else {
+            alert(`${numero} é primo!`);
+        }
+    </script>
+</body>
+</html>

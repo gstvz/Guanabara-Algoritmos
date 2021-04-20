@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <script>
+        var valor;
+        var salto;
+        var i = 0;
+
+        valor = parseInt(prompt("Até que número deseja contar?"));
+        salto = parseInt(prompt("Qual o valor do salto?"));
+        while (i <= valor){
+            alert(`O número atual é: ${i} `);
+            i += salto;
+        }
+        alert("Fim da contagem.");
+    </script>
+</body>
+</html>
