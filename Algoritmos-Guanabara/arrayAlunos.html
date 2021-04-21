@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Alunos</title>
+</head>
+<body>
+    <script>
+        var alunos =[];
+        var n1 = [];
+        var n2 = [];
+        var media = [];
+        var somaMedias = 0;
+        var mediaTurma = 0;
+        var acima = 0;
+
+        for (let i = 0; i <= 3; i++) {
+            alunos[i] = prompt("Digite o nome do aluno:");
+            n1[i] = parseInt(prompt("Digite a primeira nota:"));
+            n2[i] = parseInt(prompt("Digite a segunda nota:"));
+            media[i] = (n1[i] + n2[i]) / 2;
+            somaMedias += media[i];            
+        }
+
+        mediaTurma = somaMedias / 4;
+
+        for (let i = 0; i <= 3; i++) {    
+            alert(`O aluno ${alunos[i]} teve média ${media[i]}.`);
+            if (media [i] > mediaTurma){
+                acima++;
+            }
+        }
+        
+        alert(`${acima} alunos acima da média da turma, que é ${mediaTurma}.`);
+    </script>
+</body>
+</html>

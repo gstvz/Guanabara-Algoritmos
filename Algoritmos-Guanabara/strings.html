@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        var n = prompt("Digite seu nome:");
+        var asc = n.indexOf("a");
+        alert(`Seu nome tem ${n.length} letras; 
+        Seu nome em maiúsculo é ${n.toUpperCase()};
+        Seu nome em minúsculo é ${n.toLowerCase()};
+        A primeira letra do seu nome é ${n.charAt(0)};
+        A última letra do seu nome é ${n.charAt(n.length - 1)};
+        Seu nome tem a letra A na posição: ${n.indexOf("a")};
+        O código da letra A é: ${n.charCodeAt(asc)};
+        A letra de código 65 é: ${String.fromCharCode(65)};`);
+    </script>
+</body>
+</html>

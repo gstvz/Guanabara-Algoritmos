@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array e valores Pares</title>
+</head>
+<body>
+    <script>
+        var array = []
+        var pares = 0;
+        var index = 0;
+        var posicoes = []
+
+        for (let i = 1; i <= 7; i++) {
+            let n = parseInt(prompt(`Digite o ${i}º valor:`));
+            array.push(n);
+            if (array[index] % 2 == 0){
+                pares++;
+                posicoes.push(index);
+            }
+            index++;            
+        } alert(`O array possui ${pares} números pares, nas posições ${posicoes}.`);
+    </script>
+</body>
+</html>
