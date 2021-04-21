@@ -8,14 +8,24 @@
 </head>
 <body>
     <script>
-        /* 
-        Criar um algoritmo que verifica qual o melhor aluno da turma.
-        Perguntar: Quantos alunos têm na turma.
-        Perguntar: Nome do aluno.
-        Perguntar: Nota do aluno.
-        Informar qual o melhor aluno com base na nota.
-        Usar while e if.
-        */
+        var alunos;
+        var nome;
+        var nota;
+        var maiorNota = 0;
+        var melhorAluno;
+        var c = 1;
+
+        alunos = parseInt(prompt("Quantos alunos?"));
+
+        while (c <= alunos) {            
+            nome = prompt("Qual o nome do aluno?");
+            nota = parseInt(prompt("Qual a nota do aluno?"));            
+            if (nota > maiorNota){
+                melhorAluno = nome;
+                maiorNota = nota;
+            }  
+            c++;          
+        } alert(`O melhor aluno é ${melhorAluno} com a nota de ${maiorNota}`);        
     </script>
 </body>
 </html>

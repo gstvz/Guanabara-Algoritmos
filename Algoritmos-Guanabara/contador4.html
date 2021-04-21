@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador 4</title>
+</head>
+<body>
+    <script>
+        var tot10 = 0;
+        var simp = 0;
+        var v;
+
+        for (let c = 1; c < 6; c++) {
+            v = parseInt(prompt("Digite um valor:"));
+            if (v >= 0 && v <= 10){
+                tot10++;
+                if (v % 2 == 1){
+                    simp += v;
+                }
+            }
+        }
+        alert(`Ao todo foram ${tot10} valores entre 0 e 10
+        Nesse intervalo, a soma de ímpares foi ${simp}`);
+    </script>
+</body>
+</html>
