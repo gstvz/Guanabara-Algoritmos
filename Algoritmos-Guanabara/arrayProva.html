@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Correção de prova</title>
+</head>
+<body>
+    <script>
+        var alunos = [];
+        var notas = [];
+        var questoes = ['a', 'b', 'c', 'd', 'e'];
+        var mediaTurma = 0;        
+
+        for (let i = 1; i <= 3; i++) {
+            let nome = prompt("Digite o nome do aluno:");            
+            alunos.push(nome);
+            let nota = 0;
+            let index = 0;
+            for (let q = 1; q <= 5; q++) {
+                let resposta = prompt(`Resposta da questão ${q}: a, b, c, d ou e?`).toLowerCase();                
+                if (resposta == questoes[index]){
+                    nota += 2;
+                }
+                index++;                             
+            } notas.push(nota);          
+        }
+        
+        mediaTurma = (notas[0] + notas[1] + notas[2]) / 3;
+
+        alert(`${alunos[0]}, ${notas[0]};
+        ${alunos[1]}, ${notas[1]};
+        ${alunos[2]}, ${notas[2]};
+        A média da turma foi: ${mediaTurma}.`)
+    </script>
+</body>
+</html>
